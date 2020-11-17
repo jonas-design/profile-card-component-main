@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 100%;
+  position: relative;
+  background: #19a2ae;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  background: url("../images/bg-pattern-top.svg");
+  bottom: 37%;
+  right: 52%;
+}
+
+.container::after {
+  content: "";
+  width: 978px;
+  height: 978px;
+  position: absolute;
+  background: url("../images/bg-pattern-bottom.svg");
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+}
+
+.card {
+  width: 352px;
+  height: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card .hero {
+  height: 139px;
+  background: url("../images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card .hero img {
+  position: absolute;
+  bottom: -48px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card .about {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 144px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card .about h2 {
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+.card .about h2 span {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+.card .about p {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 18px;
+  margin-top: 0.5rem;
+}
+
+.card main {
+  display: flex;
+  align-items: center;
+  width: 347px;
+  height: 90px;
+  justify-content: center;
+}
+
+.card main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+}
+
+.card main ul li {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card main ul li p {
+  font-size: 12px;
+  color: #6a6f81;
+  padding-top: 0.2rem;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  width: 100%;
+  height: 3rem;
+  background-color: #2d3248;
+  color: #6a6f81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution a {
+  color: #19a2ae;
+  transition: all ease-in-out 200ms;
+}
+
+.attribution a:hover {
+  color: #6a6f81;
+}
+/*# sourceMappingURL=style.css.map */

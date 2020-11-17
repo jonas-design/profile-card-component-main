@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$Darkcyan: hsl(185, 75%, 39%);
+$VeryDark: hsl(229, 23%, 23%);
+$Darkgrayish: hsl(227, 10%, 46%);
+$Darkgray: hsl(0, 0%, 59%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 100%;
+  position: relative;
+  background: $Darkcyan;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
